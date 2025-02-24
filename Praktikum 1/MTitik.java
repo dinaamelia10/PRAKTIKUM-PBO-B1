@@ -1,38 +1,3 @@
-// public class MTitik {
-//     public static void main(String[] args) {
-//         System.out.println("==========Membuat Objek Titik==========");
-//         // Membuat titik T1
-//         System.out.println("Titik T1:");
-//         Titik T1 = new Titik();
-//         T1.setAbsis(3);
-//         T1.setOrdinat(4);
-//         T1.printTitik();
-//         T1.geser(3, 4);
-//         T1.printTitik();
-
-//         //membuat titik T2
-//         Titik T2 = T1;
-//         T2.setAbsis(10);
-//         T2.setOrdinat(10);
-//         T2.printTitik();
-
-//         //membuat titik T3
-//         Titik T3 = new Titik();
-//         T3.printTitik();
-
-//         System.out.println(("Jumlah Objek Titik: " + Titik.getCounterTitik()));
-//         T1.refleksiX();
-//         System.out.println("Jumlah Objek Titik: ");
-//         T1.printTitik();
-//         System.out.println("Kuadran T1: " + T1.getKuadran());
-//         System.out.println("Kuadran T2: " + T2.getKuadran());
-//         // void printCounterTitik(){
-//         //     System.out.println(this.counterTitik);
-//         // }
-//     }
-
-// }
-
 public class MTitik {
     public static void main(String[] args) {
         // Membuat objek Titik

@@ -28,15 +28,19 @@ public class MGaris {
         System.out.println("************Menampilkan Titik Tengah dari sebuah Garis************");
         System.out.println("Titik tengah garis: (" + G1.getTitikTengah().getAbsis() + ", " + G1.getTitikTengah().getOrdinat() + ")");
 
+        System.out.print("\n");
         System.out.println("************Menghitung gradien dari garis G2************");
         System.out.println("Panjang gradien G2: " + G2.getGradien());
         
+        System.out.print("\n");
         System.out.println("************Mengecek apakah G2 sejajar dengan G3************");
         System.out.println("Apakah G2 sejajar dengan G3? " + G2.isSejajar(G3));
 
+        System.out.print("\n");
         System.out.println("************Mengecek apakah tegak lurus************");
         System.out.println("Apakah G1 dan G2 tegak lurus? " + G2.isTegakLurus(G3));
 
+        System.out.print("\n");
         System.out.println("************ Menghitung persamaan Garis dalam bentuk string************");
         System.out.println("Persamaan garis G2: " + G2.getPersamaanGaris());
     }
