@@ -27,3 +27,18 @@ public class Asersi2{
             +kelilingLingkaran);
     }
 }
+
+/*PERTANYAAN : secara konsep, ada yang kurang tepat pada program Asersi2 diatas. Jelaskan!!
+ * JAWAB : 
+ * 1. Asersi bukan untuk validasi input pengguna  : Asersi dirancang untuk mendeteksi bug atau kesalahan logika internal dalam kode, 
+ *    bukan untuk menangani input eksternal yang tidak valid. Input pengguna(seperti jari - jari) adalah faktor eksternal yang berkemungkinan salah.
+ *    Sehingga lebih sesuai ditangani dengan eksepsi(misalnya, IllegalArgumentException).
+ * 2. Jika program dijalankan tanpa flag -enableassertions, asersi tidak dieksekusi. Akibatnya:
+ *    Input jari-jari negatif tidak terdeteksi , dan program tetap menghitung keliling dengan nilai salah.
+ *    Hal ini berisiko menghasilkan output yang tidak valid tanpa peringatan.
+ * SOLUSI : 
+ * Ganti asersi dengan eksepsi untuk validasi input: 
+ * if (jariJari < 0) {
+ *    throw new IllegalArgumentException("Jari-jari tidak boleh negatif!");
+ * }
+ */
